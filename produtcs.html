@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produtcs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="menu-lateral-mobile">
+
+        <div class="gh">Luxe <span>Living</span></div>
+
+        <input type="checkbox" name="" id="check">
+        <nav class="kk">
+            <a href="index.html">Home</a>
+            <a href="produtcs.html" id="active">Store</a>
+            <a href="about.html">About</a>
+            <a href="contatc.html">Contact</a>
+        </nav>
+    </div>
+
+    <header class="navbar">
+
+        <div class="logo">Luxe <span>Living</span></div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="produtcs.html" id="active">Store</a>
+            <a href="#">Product Sale</a>
+            <a href="about.html">About</a>
+            <a href="contatc.html">Contact</a>
+        </nav>
+
+        <div id="tudis">
+
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search h-5 w-5 text-gray-600" aria-hidden="true">
+                    <path d="m21 21-4.34-4.34"></path>
+                    <circle cx="11" cy="11" r="8"></circle>
+                </svg>
+            </a>
+
+            <div>
+                <a href="login.html"><button id="btn_login">Login</button></a>
+                <a href=""><button id="btn_sign">Sign Up</button></a>
+            </div>
+
+            <a href="card.html" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-shopping-cart" aria-hidden="true">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1 class="main-title">Our Products</h1>
+        <p class="subtitle">Discover our complete collection of premium home and decor items</p>
+
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label for="category"><i class="fas fa-filter"></i> Category</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sortBy">Sort By</label>
+                <select id="sortBy">
+                    <option value="name">Name</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Price Range</label>
+                <div class="price-range-inputs">
+                    <input type="number" value="0">
+                    <span></span> <input type="number" value="200">
+                </div>
+            </div>
+
+            <div class="filter-group view-options">
+                <label>View</label>
+                <div class="view-buttons">
+                    <button class="grid-view active"><i class="fas fa-th"></i></button>
+                    <button class="list-view"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Produt">
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1660002561318-6ef0a0ae1f04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxraXRjaGVuJTIwdXRlbnNpbHN8ZW58MHx8fHdoaXRlfDE3NTIzMzE3NDR8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Premium Wooden Spoon Set">
+                    <div class="product-rating">4.5</div>
+                </div>
+                <h3>Premium Wooden Spoon Set</h3>
+                <p class="description">Handcrafted wooden spoons, made from sustainable bamboo</p>
+                <div class="product-price">$29.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1587302108992-20648821725d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxraXRjaGVuJTIwdXRlbnNpbHN8ZW58MHx8fHdoaXRlfDE3NTIzMzE3NDR8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Artisan Cutting Board">
+                    <div class="product-rating">4.8</div>
+                </div>
+                <h3>Artisan Cutting Board</h3>
+                <p class="description">Beautiful wooden cutting board with natural grain patterns</p>
+                <div class="product-price">$49.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHdoaXRlfDE3NTIzMzE3MzZ8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Luxury Cotton Bedsheet Set">
+                    <div class="product-rating">4.7</div>
+                </div>
+                <h3>Luxury Cotton Bedsheet Set</h3>
+                <p class="description">Ultra-soft 100% cotton percale bedsheet set</p>
+                <div class="product-price">$89.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1550405760-d84fb321b6b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHdoaXRlfDE3NTIzMzE3MzZ8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Bamboo Bath Caddy">
+                    <div class="product-rating">4.2</div>
+                </div>
+                <h3>Bamboo Bath Caddy</h3>
+                <p class="description">Expandable bamboo bath caddy with wine glass holder</p>
+                <div class="product-price">$34.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.pexels.com/photos/2698552/pexels-photo-2698552.jpeg"
+                        alt="Modern Side Table">
+                    <div class="product-rating">4.3</div>
+                </div>
+                <h3>Modern Side Table</h3>
+                <p class="description">Minimalist wooden side table with clean lines</p>
+                <div class="product-price">$149.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.pexels.com/photos/4725635/pexels-photo-4725635.jpeg"
+                        alt="Ceramic Vase Collection">
+                    <div class="product-rating">4.3</div>
+                </div>
+                <h3>Ceramic Vase Collection</h3>
+                <p class="description">Set of 3 modern ceramic vases in neutral tones</p>
+                <div class="product-price">$45.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1660002561318-6ef0a0ae1f04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxraXRjaGVuJTIwdXRlbnNpbHN8ZW58MHx8fHdoaXRlfDE3NTIzMzE3NDR8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Premium Wooden Spoon Set">
+                    <div class="product-rating">4.5</div>
+                </div>
+                <h3>Premium Wooden Spoon Set</h3>
+                <p class="description">Handcrafted wooden spoons, made from sustainable bamboo</p>
+                <div class="product-price">$29.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1587302108992-20648821725d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxraXRjaGVuJTIwdXRlbnNpbHN8ZW58MHx8fHdoaXRlfDE3NTIzMzE3NDR8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Artisan Cutting Board">
+                    <div class="product-rating">4.8</div>
+                </div>
+                <h3>Artisan Cutting Board</h3>
+                <p class="description">Beautiful wooden cutting board with natural grain patterns</p>
+                <div class="product-price">$49.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHdoaXRlfDE3NTIzMzE3MzZ8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Luxury Cotton Bedsheet Set">
+                    <div class="product-rating">4.7</div>
+                </div>
+                <h3>Luxury Cotton Bedsheet Set</h3>
+                <p class="description">Ultra-soft 100% cotton percale bedsheet set</p>
+                <div class="product-price">$89.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1550405760-d84fb321b6b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHdoaXRlfDE3NTIzMzE3MzZ8MA&ixlib=rb-4.1.0&q=85"
+                        alt="Bamboo Bath Caddy">
+                    <div class="product-rating">4.2</div>
+                </div>
+                <h3>Bamboo Bath Caddy</h3>
+                <p class="description">Expandable bamboo bath caddy with wine glass holder</p>
+                <div class="product-price">$34.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.pexels.com/photos/2698552/pexels-photo-2698552.jpeg"
+                        alt="Modern Side Table">
+                    <div class="product-rating">4.3</div>
+                </div>
+                <h3>Modern Side Table</h3>
+                <p class="description">Minimalist wooden side table with clean lines</p>
+                <div class="product-price">$149.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://images.pexels.com/photos/4725635/pexels-photo-4725635.jpeg"
+                        alt="Ceramic Vase Collection">
+                    <div class="product-rating">4.3</div>
+                </div>
+                <h3>Ceramic Vase Collection</h3>
+                <p class="description">Set of 3 modern ceramic vases in neutral tones</p>
+                <div class="product-price">$45.99</div>
+                <a href="#" class="add-to-cart-button">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-shopping-cart" aria-hidden="true">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                            </path>
+                        </svg></span> Add to Cart
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-main-content">
+            <div class="footer-column">
+                <h3>Luxe Living</h3>
+                <p>Curating Beautiful Spaces</p>
+                <p>Curating beautiful spaces with premium home & decor since 2020.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Product Scale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Bathroom</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Decor</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-contact-info">
+                <h3>Contact Info</h3>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail text-soft-gold" aria-hidden="true">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        </svg></span> <a href="mailto:hello@luxeliving.com">hello@luxeliving.com</a>
+                </div>
+                <div>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone text-soft-gold" aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </span> <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                </div>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin text-soft-gold mt-1" aria-hidden="true">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                            </path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg></span>
+                    <p>123 Design Street, Style City, SC 12345</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"
+                                aria-hidden="true">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy; 2025 Luxe Living. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#" class="made-with-emergent">
+                    Made with <span>❤️</span> in Style. City
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="card.js"></script>
+</body>
+
+</html>

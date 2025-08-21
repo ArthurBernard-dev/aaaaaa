@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="menu-lateral-mobile">
+
+        <div class="gh">Luxe <span>Living</span></div>
+
+        <input type="checkbox" name="" id="check">
+        <nav class="kk">
+            <a href="index.html">Home</a>
+            <a href="produtcs.html">Store</a>
+            <a href="about.html">About</a>
+            <a href="contatc.html">Contact</a>
+        </nav>
+    </div>
+
+    <header class="navbar">
+
+        <div class="logo">Luxe <span>Living</span></div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="produtcs.html">Store</a>
+            <a href="#">Product Sale</a>
+            <a href="about.html">About</a>
+            <a href="contatc.html">Contact</a>
+        </nav>
+
+        <div id="tudis">
+
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search h-5 w-5 text-gray-600" aria-hidden="true">
+                    <path d="m21 21-4.34-4.34"></path>
+                    <circle cx="11" cy="11" r="8"></circle>
+                </svg>
+            </a>
+
+            <div>
+                <a href=""><button id="btn_login">Login</button></a>
+                <a href=""><button id="btn_sign">Sign Up</button></a>
+            </div>
+
+            <a href="#" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-shopping-cart" aria-hidden="true">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="content">
+                <p class="slogan-top">You can easily</p>
+                <h1 class="slogan-main">Speed up your work <br> with our Web App</h1>
+            </div>
+            <div class="partners">
+                <p class="partners-title">Our partners</p>
+                <div class="partner-icons">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/discord--v1.png" alt="Discord">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/spotify--v1.png" alt="Spotify">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play--v1.png" alt="YouTube">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok">
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <h2>Get Started Now</h2>
+                <p class="form-description">Please log in to your account to continue.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" value="workmail@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-input-group">
+                            <input type="password" id="password" value="**********">
+                            <span class="password-toggle"><i class="fa-regular fa-eye-slash"></i></span>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the Terms & Privacy</label>
+                    </div>
+                    <button type="submit" class="login-button">Log in</button>
+                </form>
+
+                <p class="signup-text">Have an account? <a href="#" class="signup-link">Signup</a></p>
+
+                <div class="divider">
+                    <span>Or</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-button google">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google icon">
+                        <span>Login with Google</span>
+                    </button>
+                    <button class="social-button apple">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="Apple icon">
+                        <span>Login with Apple</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

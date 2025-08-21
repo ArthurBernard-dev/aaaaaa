@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 7.5vh;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    color: #d4af37;
+}
+
+#active {
+    color: #d4af37;
+}
+
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    position: absolute;
+    right: 78%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.logo span {
+    color: #0051ff;
+}
+
+#tudis {
+    position: absolute;
+    left: 80%;
+    display: flex;
+    transition: 0.4s;
+    gap: 20px;
+}
+
+#tudis div {
+    display: flex;
+    gap: 20px;
+}
+
+#tudis a:hover {
+    color: #d4af37;
+}
+
+#btn_login {
+    padding: 8px 15px;
+    border: #d4af37 solid 0.1px;
+    border-radius: 5px;
+    box-shadow: 10 30px 30px rgba(10, 10, 10, 10.1);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+#btn_login:hover {
+    background-color: #d4af37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    ;
+}
+
+#btn_sign {
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 10 30px 30px rgba(10, 10, 10, 10.1);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d4af37;
+    border: none;
+    transition: 0.3s;
+}
+
+#btn_sign:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+    padding: 120px 15px;
+    justify-self: center;
+}
+
+.main-title {
+    font-family: 'Georgia', serif;
+    /* Ou uma fonte serifada similar para um visual elegante */
+    font-size: 3em;
+    /* Tamanho da fonte maior */
+    color: #3f51b5;
+    /* Azul escuro similar ao da imagem */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.filter-bar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    /* Sombra mais suave */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem a linha em telas menores */
+    justify-content: space-around;
+    /* Distribui os itens uniformemente */
+    align-items: flex-end;
+    /* Alinha os labels e inputs na parte inferior */
+    gap: 20px;
+    /* Espaçamento entre os grupos de filtro */
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinha label e input à esquerda */
+    margin-bottom: 15px;
+    /* Espaçamento inferior para garantir que os grupos não se juntem */
+    min-width: 150px;
+    /* Largura mínima para os grupos, ajustável */
+}
+
+.filter-group label {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+.filter-group select,
+.filter-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    -webkit-appearance: none;
+    /* Remove estilos padrão de navegador */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+
+/* Estilo para a seta do select */
+.filter-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666666'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+    /* Adiciona padding para não cobrir a seta */
+}
+
+.price-range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Espaçamento entre os inputs de preço */
+}
+
+.price-range-inputs input {
+    flex: 1;
+    /* Permite que os inputs ocupem o espaço disponível */
+    text-align: center;
+    /* Centraliza o texto nos inputs de preço */
+}
+
+.price-range-inputs span {
+    content: "";
+    /* Cria um hífen visual */
+    display: inline-block;
+    width: 10px;
+    /* Largura do hífen */
+    height: 1px;
+    /* Espessura do hífen */
+    background-color: #ccc;
+}
+
+
+.view-options {
+    margin-left: auto;
+    /* Empurra o grupo 'View' para a direita */
+}
+
+.view-buttons {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Garante que os botões não ultrapassem a borda */
+}
+
+.view-buttons button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #666;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.view-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+.view-buttons button.active {
+    background-color: #f5b041;
+    /* Amarelo/laranja da imagem */
+    color: #fff;
+}
+
+.view-buttons button:not(:last-child) {
+    border-right: 1px solid #ddd;
+    /* Separador entre os botões de visualização */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 480px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-group {
+        width: 100%;
+        /* Ocupa toda a largura em telas menores */
+        max-width: 300px;
+        /* Limita a largura para melhor visualização */
+    }
+
+    .view-options {
+        margin-left: 0;
+        /* Remove o auto-margin para centralizar */
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas por linha */
+    gap: 30px;
+    /* Espaçamento entre os produtos */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Espaçamento entre elementos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    /* Proporção de aspecto 4:3 (altura é 75% da largura) */
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    /* Arredondar a imagem dentro do cartão */
+}
+
+.product-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
+    border-radius: 8px;
+}
+
+.product-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.product-rating::before {
+    content: '⭐';
+    /* Ícone de estrela */
+    font-size: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    flex-grow: 1;
+    /* Permite que a descrição ocupe o espaço disponível */
+}
+
+.product-price {
+    font-size: 20px;
+    color: #d4af37;
+    /* Cor azul escuro para o preço */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    /* Cor do botão principal */
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+    /* Espaço entre o ícone e o texto */
+    width: 100%;
+    /* Ocupa a largura total do cartão */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+.add-to-cart-button:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    background-color: #0051ff;
+    ;
+    /* Cor de fundo azul escuro */
+    color: #fff;
+    padding: 50px 40px 20px;
+    /* Padding superior, lateral e inferior */
+}
+
+.footer-main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas */
+    gap: 40px;
+    /* Espaçamento entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    /* Centraliza e adiciona margem inferior antes da linha de copyright */
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    /* Cor mais clara para links */
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    /* Espaçamento entre ícone e texto */
+}
+
+.footer-contact-info span {
+    font-size: 18px;
+    /* Tamanho do ícone */
+    color: #fff;
+}
+
+.footer-contact-info a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-info a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Linha divisória */
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha em telas pequenas */
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom-left p {
+    margin: 0;
+}
+
+.footer-bottom-right a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-right a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Espaçamento entre os ícones */
+    margin-left: 20px;
+    /* Espaçamento da label "Follow Us" */
+}
+
+.social-icons a {
+    font-size: 24px;
+    /* Tamanho dos ícones de rede social */
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #D4AF37;
+    /* Cor dourada no hover para redes sociais */
+}
+
+#menu-lateral-mobile {
+    display: none;
+}
+
+@media(max-width: 480px) {
+
+    #menu-lateral-mobile {
+        display: block;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .category-grid {
+        display: contents;
+    }
+
+    .product-grid {
+        display: contents;
+    }
+
+    .footer-main-content {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .kk {
+        position: fixed;
+        right: -200%;
+        transition: 0.5s;
+    }
+
+    .gh {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #1a1a1a;
+    }
+
+    .gh span {
+        color: #0051ff;
+    }
+
+    #check:checked+.kk {
+        left: 35%;
+        display: grid;
+        text-align: center;
+        border-radius: 8px;
+        width: 65%;
+        z-index: 999;
+        height: 70%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        background: white;
+    }
+
+    .kk a{
+        text-align: center;
+        color: #0051ff;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.3s;
+    }
+
+    .kk a:hover{
+        background-color: #D4AF37;
+    }
+}

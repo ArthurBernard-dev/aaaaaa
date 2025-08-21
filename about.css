@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    justify-content: center;
+    height: 7.5vh;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    color: #d4af37;
+}
+
+#active {
+    color: #d4af37;
+}
+
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    position: absolute;
+    right: 78%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.logo span {
+    color: #0051ff;
+}
+
+#tudis {
+    position: absolute;
+    left: 80%;
+    display: flex;
+    transition: 0.4s;
+    gap: 20px;
+}
+
+#tudis div {
+    display: flex;
+    gap: 20px;
+}
+
+#tudis a:hover {
+    color: #d4af37;
+}
+
+#btn_login {
+    padding: 8px 15px;
+    border: #d4af37 solid 0.1px;
+    border-radius: 5px;
+    box-shadow: 10 30px 30px rgba(10, 10, 10, 10.1);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+#btn_login:hover {
+    background-color: #d4af37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    ;
+}
+
+#btn_sign {
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 10 30px 30px rgba(10, 10, 10, 10.1);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d4af37;
+    border: none;
+    transition: 0.3s;
+}
+
+#btn_sign:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha em telas menores */
+    justify-content: center;
+    /* Centraliza em telas menores */
+}
+
+.about-content {
+    flex: 1;
+    min-width: 300px;
+    /* Garante largura mínima para o texto */
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: #0051ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-mission {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-mission .icon {
+    font-size: 28px;
+    color: #D4AF37;
+    /* Cor dourada para o coração */
+    flex-shrink: 0;
+    /* Impede que o ícone diminua */
+}
+
+.about-mission p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    /* Garante largura mínima para a imagem */
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: 60vh;
+    width: 700%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Seção de Destaques/Estatísticas --- */
+.stats-section {
+    background-color: #0051ff;
+    /* Cor azul escuro */
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.stat-item .icon {
+    font-size: 40px;
+    /* Tamanho grande para os ícones */
+    color: #D4AF37;
+    /* Cor dourada */
+}
+
+.stat-item .number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stat-item .description {
+    font-size: 16px;
+    color: #ccc;
+}
+
+#icon {
+    color: #d4af37;
+}
+
+#core-values-section {
+    background-color: #f5f5dc; /* A light cream/yellow */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif; /* Or a similar clean font */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    color: #1a237e; /* A deep blue */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.value-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.value-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 280px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gold-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #d4af37; /* A gold color */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    color: #0051ff;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#our-journey-section {
+    background-color: #fcf8e5; /* Light cream/yellow */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    color: #0051ff; /* Deep blue */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto;
+    padding-left: 100px; /* Space for the markers */
+}
+
+/* Vertical line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 65px; /* Adjust to align with marker center */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e0e0e0; /* Light gray for the line */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center; /* Vertically align marker and content */
+    margin-bottom: 40px;
+    position: relative; /* For z-index if needed */
+}
+
+.timeline-marker {
+    background-color: #d4af37; /* Gold color */
+    border-radius: 50%;
+    width: 80px; /* Adjust size */
+    height: 80px; /* Adjust size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevent shrinking */
+    position: absolute;
+    right: 97%; /* Position to overlap the line */
+    z-index: 1; /* Ensure it's above the line */
+}
+
+.timeline-marker .year {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.timeline-content {
+    /* No explicit background, appears to be transparent */
+    padding: 10px 0 10px 30px; /* Padding for content, and left space */
+    text-align: left;
+    width: 100%; /* Take up available width */
+}
+
+.timeline-content h3 {
+    color:#0051ff;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #0051ff;
+    ;
+    /* Cor de fundo azul escuro */
+    color: #fff;
+    padding: 50px 40px 20px;
+    /* Padding superior, lateral e inferior */
+}
+
+.footer-main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas */
+    gap: 40px;
+    /* Espaçamento entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    /* Centraliza e adiciona margem inferior antes da linha de copyright */
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    /* Cor mais clara para links */
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    /* Espaçamento entre ícone e texto */
+}
+
+.footer-contact-info span {
+    font-size: 18px;
+    /* Tamanho do ícone */
+    color: #fff;
+}
+
+.footer-contact-info a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-info a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Linha divisória */
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha em telas pequenas */
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom-left p {
+    margin: 0;
+}
+
+.footer-bottom-right a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-right a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Espaçamento entre os ícones */
+    margin-left: 20px;
+    /* Espaçamento da label "Follow Us" */
+}
+
+.social-icons a {
+    font-size: 24px;
+    /* Tamanho dos ícones de rede social */
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #D4AF37;
+    /* Cor dourada no hover para redes sociais */
+}
+
+#menu-mobile {
+    display: none;
+}
+
+#menu-lateral-mobile{
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    
+
+    #menu-mobile {
+        display: block;
+    }
+
+   .navbar {
+        display: none;
+    }
+
+    #menu-lateral-mobile {
+        display: block;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .kk {
+        position: fixed;
+        right: -200%;
+        transition: 0.5s;
+    }
+
+    .gh {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #1a1a1a;
+    }
+
+    .gh span {
+        color: #0051ff;
+    }
+
+    #check:checked+.kk {
+        left: 35%;
+        display: grid;
+        text-align: center;
+        border-radius: 8px;
+        width: 65%;
+        z-index: 999;
+        height: 70%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        background: white;
+    }
+
+    .kk a{
+        text-align: center;
+        color: #0051ff;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.3s;
+    }
+
+    .kk a:hover{
+        background-color: #D4AF37;
+    }
+}
